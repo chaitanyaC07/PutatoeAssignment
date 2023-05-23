@@ -1,0 +1,107 @@
+$bg:rgb(253, 253, 253);
+$bg1:rgb(226, 242, 238);
+$font:rgb(42, 147, 112);
+
+.home{
+
+background-color: $bg1;
+
+
+}
+  
+.banner{
+    background-image: url("./banner4.jpg");
+    height: 500px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+position: relative;
+background-color: $bg;
+border:0.5px solid rgb(51, 51, 51);
+border-radius: 25px;
+// margin-top: 5px;
+align-items: center;
+
+    &::after{
+        content: "";
+        width: 100%;
+        height:100%;
+        position: absolute;
+        background: $bg;
+        opacity: 0.4;
+    }
+}
+@media (max-width: 768px){
+  .banner{
+    background-size: contain;
+  }
+}
+
+.row1{
+    display: flex;
+    
+    justify-content: space-evenly;
+    // font-size: 80px;
+    padding: 20px;
+    color:$font; 
+   
+
+    > div{
+        display: flex;
+        
+        flex-direction: column;
+        font-size: 80px;
+        border-radius: 35px;
+        // border:0.2px solid black; 
+        align-items: center;
+        padding: 30px;
+        background-color: white;
+    }
+    
+  div>span{
+    font-size: 16px;
+  }
+    
+}
+
+.product{
+align-items: center;
+display: flex;
+justify-content: center;
+font-size: 30px;
+color:$font; 
+
+}
+.product-item{
+   background-color: $font;
+   width: 100%;
+   height: 300px;
+
+   display: flex;
+   justify-content: space-evenly;
+   >div{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ background-color: white;
+ width: 180px;
+ height: 250px;
+ border-radius: 15px;
+   }
+    div>img{
+      width: 100px;
+        height: 100px;
+      margin-bottom: 15px;
+
+    }
+    div>span{
+        
+        font-size:15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .span1{
+font-size: 25px;
+    }
+}

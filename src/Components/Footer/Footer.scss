@@ -1,0 +1,32 @@
+$bg:rgb(42, 147, 112);
+
+.footer{
+    
+    width: 100%;
+   
+
+    .footer-icon{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(240, 235, 235);
+        width: 100%;
+        color: $bg;
+
+        >span{
+            font-size: 40px;
+            color:$bg; 
+           
+            
+            
+        }
+        .help{
+            color: $bg;
+            font-size: 90px;
+        }
+        .link{
+            color:$bg;
+        }
+    }
+   
+}

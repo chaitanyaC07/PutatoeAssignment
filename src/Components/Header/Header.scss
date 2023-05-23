@@ -1,0 +1,61 @@
+// *{
+//     border: 1px solid red;
+// }
+$bg:rgb(42, 147, 112); 
+.header{
+    background-color: $bg;
+    width: 100%;
+    height: 50px;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      
+   
+      .search{
+      
+        // margin-top: 6px;
+        display: flex;
+        align-items: center;
+        
+        
+            }
+
+      .search-icon{
+        
+        padding: 2.4px;
+        border: none; 
+        background-color: white;
+        box-sizing: border-box;
+
+        > svg{
+            color:$bg;
+            font-size: 1.5rem;
+        }
+      }
+  
+    .search-type{
+        border: none;
+        padding: 8px;
+        width: 400px;
+
+       
+    }
+    .search-type::placeholder{
+        font-size: 16px;
+        padding-left: 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    > svg{
+        margin-left: 8rem;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+
+        &:hover{
+            color: rgb(233, 225, 225);
+        }
+
+    }
+
+}
